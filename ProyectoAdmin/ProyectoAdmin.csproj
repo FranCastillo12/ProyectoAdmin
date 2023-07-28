@@ -67,11 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\Departamentos\SolicitarGastoPresupuesto.css" />
     <Content Include="Estilos\Generales\Navbar.css" />
+    <Content Include="pages\Departamentos\SolicitarGastoPresupuesto.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\Departamentos\SolicitarGastoPresupuesto.aspx.cs">
+      <DependentUpon>SolicitarGastoPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Departamentos\SolicitarGastoPresupuesto.aspx.designer.cs">
+      <DependentUpon>SolicitarGastoPresupuesto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
