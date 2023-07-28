@@ -11,7 +11,10 @@ namespace ProyectoAdmin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           if(1 == 1)
+           {
+                containerCrearPartida.Visible = false;
+           }
         }
     }
 }

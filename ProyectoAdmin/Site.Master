@@ -43,7 +43,7 @@
         </li>
         <li><a href="#">Gestión Departamentos</a>
             <ul>
-                <li><a href="#">Gestión de metas</a></li>
+                <li><a href="GestionMetas.aspx">Gestión de metas</a></li>
                 <li><a href="GestionPartidas.aspx">Gestión de partidas</a></li>
             </ul>
         </li>
