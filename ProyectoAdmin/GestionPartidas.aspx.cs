@@ -11,10 +11,21 @@ namespace ProyectoAdmin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           if(1 == 1)
-           {
-                containerCrearPartida.Visible = false;
-           }
+            containerAsignarPresupuestoPartida.Visible = false;
+        }
+
+
+
+        protected void btnAsignarPresupuesto_Click(object sender, EventArgs e)
+        {
+            containerAsignarPresupuestoPartida.Visible = true;
+            containerCrearPartida.Visible = false;
+        }
+
+        protected void bntCrearPartida_Click(object sender, EventArgs e)
+        {
+            containerAsignarPresupuestoPartida.Visible = false;
+            containerCrearPartida.Visible = true;
         }
     }
 }

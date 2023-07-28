@@ -73,6 +73,7 @@
     <Content Include="Estilos\IndexPostLogin.css" />
     <Content Include="GestionMetas.aspx" />
     <Content Include="GestionPartidas.aspx" />
+    <Content Include="img\Gestion Partidas Decoracion.png" />
     <Content Include="img\University Free Logo 1.png" />
     <Content Include="IndexPostLogin.aspx" />
     <Content Include="Web.config" />

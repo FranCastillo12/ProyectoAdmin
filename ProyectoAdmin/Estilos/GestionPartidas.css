@@ -3,10 +3,11 @@
     
 }
 
-    .flex-container.colum {
-        flex-direction: column;
-        margin: 1rem;
-    }
+.flex-container-colum {
+    flex-direction: column;
+    flex: 2;
+    margin-left: 1rem;
+}
 
 
 .containerAsignarPresupuestoPartida,
@@ -14,11 +15,37 @@
     margin: 1rem;
 }
 
-.containter-img{
-    
-}
-
 .buttons-conainter {
     display: flex;
     flex-direction: row;
+}
+
+.gp-buttons-conainter {
+    display: flex;
+    justify-content: left;
+}
+
+.gp-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+}
+
+
+.gp-button:hover {
+    background-color: #0056b3;
+}
+
+.containter-img{
+    flex: 1;
+    width:95%;
+    padding:2rem;
+}
+.image-decoration {
+    
+    max-width: 100%;
 }

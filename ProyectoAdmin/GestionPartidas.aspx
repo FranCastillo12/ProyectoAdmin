@@ -8,15 +8,15 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <div class="flex-container">
         <div class="containter-img">
-            <img class="image-decoration" src="https://images.unsplash.com/photo-1596679593281-41c14166a24a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" />
+            <img class="image-decoration" src="https://www.vgrow.co/wp-content/uploads/2021/11/hero-12-1024x976.png" />
         </div>
 
-        <div class="flex-container colum">
-            <div >
-            <form runat="server" class="buttons-conainter">
-                <asp:Button ID="bntCrearMeta" runat="server" Text="Crear Meta" />
-                <asp:Button ID="btnAsignarPresupuesto" runat="server" Text="asignar presupuesto a meta" />
-            </form>
+        <div class="flex-container-colum">
+            <div>
+                <form runat="server" class="gp-buttons-conainter">
+                    <asp:Button class="gp-button" ID="bntCrearPartida" runat="server" Text="Crear Partida" OnClick="bntCrearPartida_Click" />
+                    <asp:Button class="gp-button" ID="btnAsignarPresupuesto" runat="server" Text="asignar presupuesto a meta" OnClick="btnAsignarPresupuesto_Click" />
+                </form>
             </div>
             <div id="containerCrearPartida" class="containerCrearPartida" runat="server">
                 <h3>Brian</h3>
@@ -31,6 +31,7 @@
                 </p>
             </div>
         </div>
-
+        
     </div>
+
 </asp:Content>
