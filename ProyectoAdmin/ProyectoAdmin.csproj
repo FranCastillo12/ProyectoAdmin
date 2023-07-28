@@ -68,14 +68,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Estilos\Generales\Navbar.css" />
+    <Content Include="Estilos\GestionMetas.css" />
     <Content Include="Estilos\GestionPartidas.css" />
     <Content Include="Estilos\IndexPostLogin.css" />
+    <Content Include="GestionMetas.aspx" />
     <Content Include="GestionPartidas.aspx" />
     <Content Include="img\University Free Logo 1.png" />
     <Content Include="IndexPostLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionMetas.aspx.cs">
+      <DependentUpon>GestionMetas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionMetas.aspx.designer.cs">
+      <DependentUpon>GestionMetas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GestionPartidas.aspx.cs">
       <DependentUpon>GestionPartidas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

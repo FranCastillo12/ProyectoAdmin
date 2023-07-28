@@ -15,6 +15,24 @@ namespace ProyectoAdmin
     {
 
         /// <summary>
+        /// bntCrearMeta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bntCrearMeta;
+
+        /// <summary>
+        /// btnAsignarPresupuesto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAsignarPresupuesto;
+
+        /// <summary>
         /// containerCrearPartida control.
         /// </summary>
         /// <remarks>

@@ -1,91 +1,108 @@
-﻿*{
-	margin: 0;
-	padding: 0;
-	font-family: Arial;
+﻿/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-html{
-	font-size: 16px;
-}
+/* Estilos del menú */
 .menu {
-	width: 100%;
-	height: 50px;
-	margin: 0 auto;
-	padding: 0;
-	list-style: none; /*Quita las vinetas*/
-	background-color: #f7f7f7;
-	display:flex;
-	justify-content: center;
-}
-.menu li{
-	width: 300px;
-	height: 50px;
-	float: left;
-	background-color: #f7f7f7;
-	text-align: center;
-	line-height: 2.7;
-}
-	.menu li a {
-		display: block;
-		width: 100%;
-		height: 100%;
-		text-decoration: none;
-		
-		color: #555555;
-	}
-		.menu li a:hover {
-			transition: 0.2s;
-			background-color: #ff9401;
-			color: #fff;
-		}
-.menu ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-.menu li > ul{
-	width: 160px;
-	height: 50px;
-	display: none;
-}
-.menu li:hover > ul{
-	display: block;
-}
-	.menu > li > ul li a:hover {
-		background-color: #8cce50;
-		color: #fff;
-	}
-.content {
-	padding: 1rem;
-	margin: 1rem;
+    height: 50px;
+    margin: 0 auto;
+    list-style: none; /* Quita las vinetas */
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
 }
 
+    .menu li {
+        width: 300px;
+        height: 50px;
+        background-color: #f7f7f7;
+        text-align: center;
+        line-height: 50px;
+    }
+
+        .menu li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #555555;
+        }
+
+            .menu li a:hover {
+                transition: 0.2s;
+                background-color: #ff9401;
+                color: #fff;
+            }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li > ul {
+        width: 160px;
+        height: 50px;
+        display: none;
+    }
+
+    .menu li:hover > ul {
+        display: block;
+    }
+
+    .menu > li > ul li a:hover {
+        background-color: #8cce50;
+        color: #fff;
+    }
+
+
+
+/* Estilos de la cabecera */
 .header {
-	background-color: #ffffff;
-	padding: 10px;
-	
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
-	.header img {
-		height: 70px;
-		max-width: 100%;
-	}
+.header-data-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-	.header.right {
-		text-align: right;
-	}
+.data-user-container {
+    text-align: right;
+    width: 15%;
+    padding: 1rem;
+}
 
 .image-container {
-	display: flex;
-	align-items: center; 
-	justify-content: center; 
-	width: 90%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
 }
 
-.flex-items {
-	display: flex;
+.header img {
+    height: 100px;
+    max-width: 100%;
+    padding: 1rem;
 }
 
 .data-user {
-	color: #555555;
+    color: #555555;
+}
+
+/* Estilos content place holder ASP*/
+.content {
+    padding: 1rem;
+    margin-top: 10rem;
 }

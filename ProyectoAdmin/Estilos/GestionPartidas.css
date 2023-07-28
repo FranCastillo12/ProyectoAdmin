@@ -18,3 +18,7 @@
     
 }
 
+.buttons-conainter {
+    display: flex;
+    flex-direction: row;
+}

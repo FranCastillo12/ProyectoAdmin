@@ -4,59 +4,63 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>
         <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
     </title>
     <! ––«Head de las otras paginas «––>
     <asp:ContentPlaceHolder ID="head" runat="server">
-
     </asp:ContentPlaceHolder>
 
     <! ––«Estilos del Navbar «––>
-    <link  href="Estilos/Generales/Navbar.css" rel="stylesheet" />
+    <link href="Estilos/Generales/Navbar.css" rel="stylesheet" />
 
     <! ––«Scripts Fontawesome «––>
     <script src="https://kit.fontawesome.com/a2ec7d5873.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <div class="flex-items">
+
+        <div class="header-data-container">
             <div class="image-container">
                 <img src="img/University Free Logo 1.png" />
             </div>
-            
-            <div class="header right">
+
+            <div class="data-user-container">
                 <h3 class="data-user">Nombre usuario</h3>
                 <h5 class="data-user">Rol del usuario</h5>
             </div>
         </div>
-    </header>
-    <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Transacciones</a>
-            <ul>
-                <li><a href="#">Solicitud gasto de presupuesto</a></li>
-                <li><a href="#">Aprobación de gasto</a></li>
-                <li><a href="#">Solicitud modifiación presupuestaria</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Gestión Departamentos</a>
-            <ul>
-                <li><a href="GestionMetas.aspx">Gestión de metas</a></li>
-                <li><a href="GestionPartidas.aspx">Gestión de partidas</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Control Modificaciones Presupuestarias</a>
-            <ul>
-                <li><a href="#">Evaluación de solicitudes</a></li>
-                <li><a href="#">Planificación</a></li>
-            </ul>
-        </li>
-    </ul>
-  <div class="content">
-    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
 
-  </div>
+
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Transacciones</a>
+                <ul>
+                    <li><a href="#">Solicitud gasto de presupuesto</a></li>
+                    <li><a href="#">Aprobación de gasto</a></li>
+                    <li><a href="#">Solicitud modifiación presupuestaria</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gestión Departamentos</a>
+                <ul>
+                    <li><a href="GestionMetas.aspx">Gestión de metas</a></li>
+                    <li><a href="GestionPartidas.aspx">Gestión de partidas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Control Modificaciones Presupuestarias</a>
+                <ul>
+                    <li><a href="#">Evaluación de solicitudes</a></li>
+                    <li><a href="#">Planificación</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="content">
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+    </div>
 </body>
 </html>
