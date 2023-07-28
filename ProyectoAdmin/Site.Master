@@ -44,7 +44,7 @@
         <li><a href="#">Gestión Departamentos</a>
             <ul>
                 <li><a href="#">Gestión de metas</a></li>
-                <li><a href="#">Gestión de partidas</a></li>
+                <li><a href="GestionPartidas.aspx">Gestión de partidas</a></li>
             </ul>
         </li>
         <li><a href="#">Control Modificaciones Presupuestarias</a>

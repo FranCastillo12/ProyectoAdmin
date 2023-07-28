@@ -1,0 +1,20 @@
+﻿.flex-container {
+    display: flex;
+    
+}
+
+    .flex-container.colum {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+
+.containerAsignarPresupuestoPartida,
+.containerCrearPartida {
+    margin: 1rem;
+}
+
+.containter-img{
+    
+}
+
