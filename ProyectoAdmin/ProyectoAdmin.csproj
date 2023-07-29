@@ -67,11 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\AprobarGastoPresupuesto.css" />
     <Content Include="Estilos\Generales\Navbar.css" />
+    <Content Include="SolicitudModificacionPresupuestaria.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="AprobarGastoPresupuesto.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SolicitudModificacionPresupuestaria.aspx.cs">
+      <DependentUpon>SolicitudModificacionPresupuestaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SolicitudModificacionPresupuestaria.aspx.designer.cs">
+      <DependentUpon>SolicitudModificacionPresupuestaria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -80,12 +89,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="AprobarGastoPresupuesto.aspx.cs">
+      <DependentUpon>AprobarGastoPresupuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="AprobarGastoPresupuesto.aspx.designer.cs">
+      <DependentUpon>AprobarGastoPresupuesto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,70 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+.bodyPagina {
+    background-color: #f7f7f7;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.FechaActual {
+    margin-left: 25px;
+    color: #555555;
+    margin-bottom: 50px;
+}
+
+/*Estilos de la tabla*/
+
+.grid_solicitudes th {
+    border: none;
+    padding: 25px;
+    color: #4e2e77;
+    font-size: large;
+    text-align: left;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+
+.grid_solicitudes td {
+    border: none;
+    padding: 25px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.grid_solicitudes {
+    border-collapse: collapse;
+    border-radius: 15px;
+    border: none;
+    color: #555555;
+    margin-left: 25px;
+    background-color: #ffffff;
+}
+
+
+/*Botones del gridview*/
+.button {
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+    .button:hover {
+        outline: none;
+        cursor: pointer;
+    }
+
+    .button.aprobar {
+        color: #158339;
+    }
+
+    .button.rechazar {
+        color: #be3f2f;
+    }
+
+    .button.ver_motivos {
+        color: #31569d;
+    }
