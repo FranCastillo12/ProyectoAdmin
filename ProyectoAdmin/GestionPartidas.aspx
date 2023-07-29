@@ -25,67 +25,65 @@
                 <form runat="server">
              <div style="margin-left:25px;">
 
-                <div style="display:flex;">
-                    <h3 class="Partida" style="margin-right:-70px">Departamentos</h3>
-                    <h3 class="Presupuesto" style="margin-right:300px">Metas</h3>   
-                </div>
-                 
-                 
-                <div style="display:flex; margin-top:5px;">
-                    <div>
-                        <asp:DropDownList runat="server" CssClass="input">
-                            <asp:ListItem Text="text1" />
-                            <asp:ListItem Text="text2" />
-                        </asp:DropDownList>
-                    </div>
-                    
-                    <div style="margin-left:35.5%;">
-                        
-                         <div>
-                        <asp:DropDownList runat="server" CssClass="input">
-                            <asp:ListItem Text="text1" />
-                            <asp:ListItem Text="text2" />
-                        </asp:DropDownList>
-                    </div>
-                    </div>
+                <div class="containter-gridViewMetas">
+                    <asp:GridView ID="gridViewPartidas" class="gridViewPartidas" runat="server" OnRowDataBound="gridViewPartidas_DataBound" OnRowCommand="gridViewPartidas_RowCommand">
+                        <Columns>
+                            <asp:ButtonField ControlStyle-CssClass="gridPartidas-button" Text="Asociar partida" ButtonType="Button" CommandName="SelectPartida"></asp:ButtonField>
+                        </Columns>
+                    </asp:GridView>
                 </div>
 
-                    <div style="display:flex;margin-top:100px">
-                    <h3 class="Partida" style="margin-right:10px">Partida</h3>
-                    <h3 class="Presupuesto" style="margin-right:10px">Presupuesto</h3>   
-                </div>
-                 
-                     <div style="display:flex; margin-top:5px;">
-                    <div>
-                        <asp:DropDownList runat="server" CssClass="input">
-                            <asp:ListItem Text="text1" />
-                            <asp:ListItem Text="text2" />
-                        </asp:DropDownList>
-                    </div>
-                    
-                    <div style="margin-left:35.5%;">
-                        
-                        <asp:TextBox runat="server" ID="TextBox1" CssClass="input"></asp:TextBox>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-                 <div style="margin-left:35%; margin-top:40px;">
-
-                     <asp:Button runat="server" ID="btn_enviar_solicitud" Text="Asigna Presupuesto" CssClass="button enviar_solicitud"/>
-                    
-                 </div>
             </div>
-        </form>
+            <div id="containerAsignarPresupuestoPartida" class="containerAsignarPresupuestoPartida" runat="server">
+                
+
+
+
+                    <div style="display: flex;">
+                        <h3 class="Partida" style="margin-right: -70px">Departamentos</h3> 
+                    </div>
+
+
+                  
+                        <div class="container-dllDepartamentos">
+                            <asp:DropDownList ID="ddlDepartamentosPresupuesto" runat="server" AutoPostBack="true" CssClass="ddlDepartamentos" OnSelectedIndexChanged="ddlDepartamentosPresupuesto_SelectedIndexChanged">
+                              <asp:ListItem Text="Departamento de Recursos Humanos" Value="1 Recursos Humanos"></asp:ListItem>
+                        <asp:ListItem Text="Departamento de TI" Value="2 TI"></asp:ListItem>
+                        <asp:ListItem Text="Departamento de Finanzas" Value="3 Finanzas"></asp:ListItem>
+                        <asp:ListItem Text="Departamento de Defensa" Value="4 Defensa"></asp:ListItem>
+                            </asp:DropDownList>
+                            <br />
+                        </div>
+
+
+
+                    <div class="containter-gridViewMetas">
+                               <asp:GridView ID="gridmetaspresupuesto" class="gridViewMetas" runat="server" OnRowDataBound="gridmetaspresupuesto_RowDataBound" OnRowCommand="gridmetaspresupuesto_RowCommand">
+                                    <Columns>
+                                             <asp:ButtonField ControlStyle-CssClass="gridMetas-button" Text="Seleccionar" ButtonType="Button" CommandName="SelectMeta"></asp:ButtonField>
+                                    </Columns>
+                                </asp:GridView>
+                    </div>
+
+                  
+                         <div class="containter-gridViewMetas">
+                    <asp:GridView ID="gridMetasXPartida" class="gridViewPartidas" runat="server" OnRowCommand="gridMetasXPartida_RowCommand" OnRowDataBound="gridMetasXPartida_RowDataBound">
+                        <Columns>
+                            <asp:ButtonField ControlStyle-CssClass="gridPartidas-button" Text="Asociar partida" ButtonType="Button" CommandName="SelectPartida"></asp:ButtonField>
+                        </Columns>
+                    </asp:GridView>
+                </div>
+                <div class="container-input"> 
+                    <h3 class="Partida"  id="lblPresupuestoo" runat="server" style="margin-left: 450px;margin-top:30px;">Presupuesto</h3>
+                    <asp:TextBox ID="txtPresupuesto" style="margin-left: 400px;" runat="server" CssClass="input" />
+                   
+                </div>
+                
+                <asp:Button  style="margin-left: 410px;" ID="btnAsignar_Presupuestoo" CssClass="button enviar_solicitud" Text="Asignar Presupuesto" runat="server" OnClick="btnAsignar_Presupuestoo_Click" />
+             
             </div>
         </div>
+    </div>
 
     </div>
 </asp:Content>
