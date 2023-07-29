@@ -22,7 +22,7 @@
                  
                 <div style="display:flex; margin-top:5px;">
                     <div>
-                        <asp:DropDownList runat="server" CssClass="input">
+                        <asp:DropDownList runat="server" CssClass="input" ID="ddlPartidas">
                             <asp:ListItem Text="text1" />
                             <asp:ListItem Text="text2" />
                         </asp:DropDownList>
@@ -43,7 +43,7 @@
 
                  <div style="margin-left:35%; margin-top:40px;">
 
-                     <asp:Button runat="server" ID="btn_enviar_solicitud" Text="Enviar Solicitud​" CssClass="button enviar_solicitud"/>
+                     <asp:Button runat="server" ID="btn_enviar_solicitud" Text="Enviar Solicitud​" CssClass="button enviar_solicitud" OnClick="btn_enviar_solicitud_Click"/>
                     
                  </div>
             </div>

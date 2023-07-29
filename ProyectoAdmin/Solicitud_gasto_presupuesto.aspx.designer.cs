@@ -24,6 +24,15 @@ namespace ProyectoAdmin
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl fecha_actual;
 
         /// <summary>
+        /// Control ddlPartidas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPartidas;
+
+        /// <summary>
         /// Control txt_monto_solicitado.
         /// </summary>
         /// <remarks>
