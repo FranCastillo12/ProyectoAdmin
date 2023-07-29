@@ -42,6 +42,33 @@ namespace ProyectoAdmin
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl containerCrearPartida;
 
         /// <summary>
+        /// dllDepartamentos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dllDepartamentos;
+
+        /// <summary>
+        /// gridViewMetas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridViewMetas;
+
+        /// <summary>
+        /// gridViewPartidas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridViewPartidas;
+
+        /// <summary>
         /// containerAsignarPresupuestoPartida control.
         /// </summary>
         /// <remarks>

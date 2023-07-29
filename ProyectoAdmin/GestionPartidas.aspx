@@ -13,16 +13,43 @@
 
         <div class="flex-container-colum">
             <div>
-                <form runat="server" class="gp-buttons-conainter">
+                <div class="gp-buttons-conainter">
                     <asp:Button class="gp-button" ID="bntCrearPartida" runat="server" Text="Crear Partida" OnClick="bntCrearPartida_Click" />
                     <asp:Button class="gp-button" ID="btnAsignarPresupuesto" runat="server" Text="asignar presupuesto a meta" OnClick="btnAsignarPresupuesto_Click" />
-                </form>
+                </div>
             </div>
             <div id="containerCrearPartida" class="containerCrearPartida" runat="server">
-                <h3>Brian</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Por favor, seleccione uno de los departamentos disponibles con el fin de asociar las metas correspondientes a las partidas mostradas en el catálogo desplegable. Esta acción es fundamental para dar inicio al proceso de creación de una partida.
                 </p>
+
+
+                    <div class="container-dllDepartamentos">
+                        <asp:DropDownList ID="dllDepartamentos" runat="server" AutoPostBack="true" OnSelectedIndexChanged="dllDepartamentos_SelectedIndexChanged" CssClass="ddlDepartamentos">
+                            <asp:ListItem Text="Departamento de Recursos Humanos" Value="1 Recursos Humanos"></asp:ListItem>
+                            <asp:ListItem Text="Departamento de TI" Value="2 TI"></asp:ListItem>
+                            <asp:ListItem Text="Departamento de Finanzas" Value="3 Finanzas"></asp:ListItem>
+                            <asp:ListItem Text="Departamento de Defensa" Value="4 Defensa"></asp:ListItem>
+                        </asp:DropDownList>
+                        <br />
+                    </div>
+
+                    <div class="containter-gridViewMetas">
+                        <asp:GridView ID="gridViewMetas" class="gridViewMetas" runat="server" OnRowDataBound="gridViewMetas_DataBound" OnRowCommand="gridViewMetas_RowCommand">
+                            <Columns>
+                                <asp:ButtonField ControlStyle-CssClass="gridMetas-button" Text="Seleccionar" ButtonType="Button" CommandName="SelectMeta"></asp:ButtonField>
+                            </Columns>
+                        </asp:GridView>
+                    </div>
+
+                <div class="containter-gridViewMetas">
+                    <asp:GridView ID="gridViewPartidas" class="gridViewPartidas" runat="server" OnRowDataBound="gridViewPartidas_DataBound" OnRowCommand="gridViewPartidas_RowCommand">
+                            <Columns>
+                                <asp:ButtonField ControlStyle-CssClass="gridPartidas-button" Text="Asociar partida" ButtonType="Button" CommandName="SelectPartida"></asp:ButtonField>
+                            </Columns>
+                        </asp:GridView>
+                    </div>
+
             </div>
             <div id="containerAsignarPresupuestoPartida" class="containerAsignarPresupuestoPartida" runat="server">
                 <h3>Francisco</h3>

@@ -58,9 +58,9 @@
     </header>
 
     <div class="content">
-
+        <form runat="server" >
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-
+        </form>
     </div>
 </body>
 </html>

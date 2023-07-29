@@ -49,3 +49,93 @@
     
     max-width: 100%;
 }
+
+.container-dllDepartamentos{
+    margin-top:1rem;
+}
+.ddlDepartamentos {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.containter-gridViewMetas {
+    padding-top: 2rem;
+    padding-right: 10rem;
+}
+/* Estilos para el GridView Metas*/
+.gridViewMetas {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+/* Estilos para las celdas del GridView */
+.gridViewMetas td, #gridViewMetas th {
+    padding:10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para la cabecera del GridView */
+    .gridViewMetas th {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 8px;
+    }
+
+/* Estilos para el botón Seleccionar */
+.gridMetas-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Seleccionar al pasar el cursor */
+.gridMetas-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el GridView Partidas*/
+.gridViewPartidas {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+/* Estilos para las celdas del GridView */
+.gridViewPartidas td, #gridViewPartidas th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para la cabecera del GridView */
+    .gridViewPartidas th {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 8px;
+    }
+
+/* Estilos para el botón Seleccionar */
+.gridPartidas-button {
+    
+    background-color: #e78412;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Seleccionar al pasar el cursor */
+.gridPartidas-button:hover {
+    background-color: #b3660e;
+}
