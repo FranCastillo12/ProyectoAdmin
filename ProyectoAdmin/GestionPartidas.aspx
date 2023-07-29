@@ -19,18 +19,15 @@
             </div>
             <div id="containerAsignarPresupuestoPartida" class="containerAsignarPresupuestoPartida">
                 <h3>Francisco</h3>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </p>
                 <br />
                 <br />
 
                 <form runat="server">
              <div style="margin-left:25px;">
 
-                <div style="display:flex">
-                    <h3 class="Partida" style="margin-right:10px">Partida</h3>
-                    <h3 class="Presupuesto" style="margin-right:10px">Presupuesto</h3>   
+                <div style="display:flex;">
+                    <h3 class="Partida" style="margin-right:-70px">Departamentos</h3>
+                    <h3 class="Presupuesto" style="margin-right:300px">Metas</h3>   
                 </div>
                  
                  
@@ -44,12 +41,45 @@
                     
                     <div style="margin-left:35.5%;">
                         
-                        <asp:TextBox runat="server" ID="txt_monto_solicitado" CssClass="input"></asp:TextBox>
+                         <div>
+                        <asp:DropDownList runat="server" CssClass="input">
+                            <asp:ListItem Text="text1" />
+                            <asp:ListItem Text="text2" />
+                        </asp:DropDownList>
+                    </div>
                     </div>
                 </div>
+
+                    <div style="display:flex;margin-top:100px">
+                    <h3 class="Partida" style="margin-right:10px">Partida</h3>
+                    <h3 class="Presupuesto" style="margin-right:10px">Presupuesto</h3>   
+                </div>
+                 
+                     <div style="display:flex; margin-top:5px;">
+                    <div>
+                        <asp:DropDownList runat="server" CssClass="input">
+                            <asp:ListItem Text="text1" />
+                            <asp:ListItem Text="text2" />
+                        </asp:DropDownList>
+                    </div>
+                    
+                    <div style="margin-left:35.5%;">
+                        
+                        <asp:TextBox runat="server" ID="TextBox1" CssClass="input"></asp:TextBox>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
                  <div style="margin-left:35%; margin-top:40px;">
 
-                     <asp:Button runat="server" ID="btn_enviar_solicitud" Text="Enviar Solicitud​" CssClass="button enviar_solicitud"/>
+                     <asp:Button runat="server" ID="btn_enviar_solicitud" Text="Asigna Presupuesto" CssClass="button enviar_solicitud"/>
                     
                  </div>
             </div>
