@@ -70,9 +70,11 @@
     <Content Include="Estilos\Generales\Navbar.css" />
     <Content Include="Estilos\GestionPartidas.css" />
     <Content Include="Estilos\IndexPostLogin.css" />
+    <Content Include="Estilos\Solicitud_gasto_presupuesto.css" />
     <Content Include="GestionPartidas.aspx" />
     <Content Include="img\University Free Logo 1.png" />
     <Content Include="IndexPostLogin.aspx" />
+    <Content Include="Solicitud_gasto_presupuesto.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -98,6 +100,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud_gasto_presupuesto.aspx.cs">
+      <DependentUpon>Solicitud_gasto_presupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud_gasto_presupuesto.aspx.designer.cs">
+      <DependentUpon>Solicitud_gasto_presupuesto.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
