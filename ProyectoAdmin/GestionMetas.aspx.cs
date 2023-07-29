@@ -13,5 +13,16 @@ namespace ProyectoAdmin
         {
 
         }
+
+        protected void DllDepartamentos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Obtener el valor seleccionado del DropDownList
+            string departamentoID = dllDepartamentosMetas.SelectedValue;
+
+            // Almacenar el ID en una variable de sesión
+            Session["DepartamentoID"] = departamentoID;
+
+
+        }
     }
 }

@@ -1,2 +1,37 @@
 ﻿body {
 }
+
+fieldset{
+    border: none;
+
+}
+
+.container-dllDepartamentos {
+    
+}
+
+.container-field{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.label-field{
+    font-size: 20px;
+    padding:3px;
+}
+
+.input-field{
+    font-size:20px;
+    padding: 5px;
+}
+
+.ddlDepartamentos {
+    padding: 0 5px 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.1rem;
+}
