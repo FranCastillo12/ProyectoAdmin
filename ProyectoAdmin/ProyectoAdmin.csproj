@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\SolicitudModificacionPresupuestaria.css" />
     <Content Include="Estilos\AprobarGastoPresupuesto.css" />
     <Content Include="Estilos\Generales\Navbar.css" />
     <Content Include="SolicitudModificacionPresupuestaria.aspx" />

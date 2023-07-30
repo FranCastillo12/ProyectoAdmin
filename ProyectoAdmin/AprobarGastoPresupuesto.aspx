@@ -13,16 +13,14 @@
             <h2 class="FechaActual" runat="server" id="fecha_actual"></h2>
 
             <div>
-                <form runat="server">
-                    <asp:GridView runat="server" ID="grid_solicitudes" CssClass="grid_solicitudes" OnRowCommand="grid_solicitudes_RowCommand" OnRowDataBound="grid_solicitudes_RowDataBound">
-                        <Columns>
-                            <asp:ButtonField ButtonType="Button" CommandName="ver_motivos" Text="Ver Motivos" ControlStyle-CssClass="button ver_motivos" />
-                            <asp:ButtonField ButtonType="Button" CommandName="rechazar_solicitud" Text="Rechazar" ControlStyle-CssClass="button rechazar" />
-                            <asp:ButtonField ButtonType="Button" CommandName="aprobar_solicitud" Text="Aprobar" ControlStyle-CssClass="button aprobar" />
-                        </Columns>
+                <asp:GridView runat="server" ID="grid_solicitudes" CssClass="grid_solicitudes" OnRowCommand="grid_solicitudes_RowCommand" OnRowDataBound="grid_solicitudes_RowDataBound">
+                    <Columns>
+                        <asp:ButtonField ButtonType="Button" CommandName="ver_motivos" Text="Ver Motivos" ControlStyle-CssClass="button ver_motivos" />
+                        <asp:ButtonField ButtonType="Button" CommandName="rechazar_solicitud" Text="Rechazar" ControlStyle-CssClass="button rechazar" />
+                        <asp:ButtonField ButtonType="Button" CommandName="aprobar_solicitud" Text="Aprobar" ControlStyle-CssClass="button aprobar" />
+                    </Columns>
 
-                    </asp:GridView>
-                </form>
+                </asp:GridView>
             </div>
         </di>
     </div>

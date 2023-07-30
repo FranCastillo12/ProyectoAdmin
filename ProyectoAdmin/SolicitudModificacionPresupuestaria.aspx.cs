@@ -13,5 +13,25 @@ namespace ProyectoAdmin
         {
 
         }
+        //protected void grid_partidas_RowDataBound(object sender, GridViewCommandEventArgs e)
+        //{
+
+        //}
+        //protected void grid_partidas_RowDataBound2(object sender, GridViewCommandEventArgs e)
+        //{
+
+        //}
+        protected void grid_origen_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+        protected void grid_destino_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+        protected void btn_enviar_solicitud_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
