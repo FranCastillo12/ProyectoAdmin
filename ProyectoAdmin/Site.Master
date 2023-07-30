@@ -39,7 +39,7 @@
                 <ul>
                     <li><a href="#">Solicitud gasto de presupuesto</a></li>
                     <li><a href="#">Aprobación de gasto</a></li>
-                    <li><a href="#">Solicitud modifiación presupuestaria</a></li>
+                    <li><a href="SolicitudModificacionPresupuestaria.aspx">Solicitud modifiación presupuestaria</a></li>
                 </ul>
             </li>
             <li><a href="#">Gestión Departamentos</a>

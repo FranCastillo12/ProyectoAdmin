@@ -71,11 +71,13 @@
     <Content Include="Estilos\GestionMetas.css" />
     <Content Include="Estilos\GestionPartidas.css" />
     <Content Include="Estilos\IndexPostLogin.css" />
+    <Content Include="Estilos\SolicitudModificacionPresupuestaria.css" />
     <Content Include="GestionMetas.aspx" />
     <Content Include="GestionPartidas.aspx" />
     <Content Include="img\Gestion Partidas Decoracion.png" />
     <Content Include="img\University Free Logo 1.png" />
     <Content Include="IndexPostLogin.aspx" />
+    <Content Include="SolicitudModificacionPresupuestaria.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +109,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudModificacionPresupuestaria.aspx.cs">
+      <DependentUpon>SolicitudModificacionPresupuestaria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SolicitudModificacionPresupuestaria.aspx.designer.cs">
+      <DependentUpon>SolicitudModificacionPresupuestaria.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
